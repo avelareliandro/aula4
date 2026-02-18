@@ -10,7 +10,8 @@ class Paciente:
 
     def altera_idade(self, nova_idade):
         self.idade = nova_idade
-    
+    def altera_nome(self, novo_nome):
+        self.nome = novo_nome
     def altera_altura(self, nova_altura):
         self.altura = nova_altura   
     def altera_peso(self, novo_peso):
@@ -22,3 +23,6 @@ class Paciente:
     def altera_dat_consult(self, nova_dat_consult):
         self.dat_consult.append(nova_dat_consult)
     
+p = Paciente("Maria", 30, 1.65, 60, "O+", "10/02")
+print(p.nome)       
+p.a
